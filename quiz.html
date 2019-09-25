@@ -1,0 +1,78 @@
+<html>
+<body>
+ <div style="background-color: rgb(255, 51, 0)"> 
+<h1 align="center">Quiz</h1>
+<div>
+<b> Q1. best football club in the world?  </b>
+
+<br>
+<input type="radio" name="q1" value="1">Manchester united<br>
+<input type="radio" name="q1" value="2">chelsea<br>
+<input type="radio" name="q1" value="3">liverpool<br>
+<input type="radio" name="q1" value="4">arsenal<br><br>
+<b>Q2. who won ww2?</b>
+<br>
+<input type="radio" name="q2" value="1">USSR<br>
+<input type="radio" name="q2" value="2">germany (nazi)<br>
+<input type="radio" name="q2" value="3">usa<br>
+<input type="radio" name="q2" value="4">none of above<br>
+<br>
+<b>Q3. most productive nation  </b>
+<br>
+<input type="radio" name="q3" value="1">japan<br>
+<input type="radio" name="q3" value="2">india<br>
+<input type="radio" name="q3" value="3">china<br>
+<input type="radio" name="q3" value="4">russia<br>
+<br>
+<b>Q4 who wrote the communist manifesto?</b>
+<br>
+<input type="radio" name="q4" value="1">Karl Marx‎ and ‎Friedrich Engels	<br>
+<input type="radio" name="q4" value="2">Vladimir Lenin<br>
+<input type="radio" name="q4" value="3">vladimirr putin<br>
+<input type="radio" name="q4" value="4">che guevara<br>
+<br>
+<b>Q5 the idealogy that is suite for  enhasment of labour force.
+</b>
+<br>
+<input type="radio" name="q5" value="1">capatilism<br>
+<input type="radio" name="q5" value="2">communism<br>
+<input type="radio" name="q5" value="3">socialism<br>
+<input type="radio" name="q5" value="4">radical centerism<br>
+<input type="submit" onclick="fun()" value="Submit">
+<br>
+
+
+<script type="text/javascript">
+  function fun()
+  {  
+    var a
+    var c=0
+    a=[document.getElementsByName("q1"),document.getElementsByName("q2"),document.getElementsByName("q3"),document.getElementsByName("q4"),document.getElementsByName("q5")]
+    if(a[0][0].checked)
+    {
+        c=c+1
+    }
+    if(a[1][0].checked)
+    {
+        c=c+1
+    }
+    if(a[2][2].checked)
+    {
+        c=c+1
+    }
+    if(a[3][0].checked)
+    {
+        c=c+1
+    }
+    if(a[4][1].checked)
+    {
+        c=c+1
+    }
+    alert("you got" +c+ "marks");
+}
+
+</script>
+</div>
+</div>
+</body>
+</html>
