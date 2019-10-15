@@ -1,0 +1,55 @@
+<html>
+        <label>ENTER A STRING</label>
+        <input type="text" id="re">
+        <input type="submit" value="Enter" onclick=fun()>
+        <br>
+        <h4>THE REVERSED STRING IS</h4>
+        <p id="dis"></p>
+        <label>ENTER THE LIMIT</label>
+        <input type="text" id="lim">
+        <input type="submit" value="Enter" onclick=fib()>
+        <br>
+        <h4>THE FIBONACCI SERIES IS</h4>
+        <p id="ser"></p>
+<body>
+
+
+
+<script >
+  function fun()
+   {
+    var ne="";
+    var x=document.getElementById("re").value;
+  
+    var n=x.length;
+    for (var i=n-1;i>=0;i--)
+     {
+       var ne=ne+x[i]
+     }
+      document.getElementById("dis").innerHTML=ne
+
+   }
+
+  function fib()
+    {
+      var a=0
+      var b=1
+      var c
+      var n=document.getElementById("lim").value;
+      document.write(a)
+      document.write("<br>")
+      document.write(b)
+      document.write("<br>")
+      for(i=3;i<=n;i++)
+       {
+        c=a+b;
+        a=b;
+        b=c;
+        document.write(c)
+        document.write("<br>")
+    }
+
+}
+  </script>
+ <body>
+</html>
