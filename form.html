@@ -1,0 +1,40 @@
+<html>
+<body>
+<script>  
+function validateform()
+{
+  var name=document.myform.name.value;  
+  var password=document.myform.password.value;  
+  var mobileno=document.myform.mobileno.value;
+  var emailid=document.myform.emailid.value;
+
+  if(password.length<6)
+    {  
+      alert("Password must be at least 6 characters       long");  
+  return false;  
+    }  
+  
+   else if(mobileno.length!=10 || mobileno==null)
+   {  
+     alert("mobile number is wrong");  
+     return false;  
+  }  
+ 
+  else
+  {
+    alert("successfully entetred the data");
+}
+}
+</script>  
+<body style="background-color:lightgreen">
+<form name="myform" method="post"  onsubmit="return validateform()">  
+    <h1><center>REGISTRATION FORM</center></h1>
+USERNAME:<input type="text" name="name" required><br> <br><br> 
+PASSWORD:<input type="password" name="password"required><br>  <br><br>
+MOBILE NO:<input type="number" name="mobileno"required><br><br><br>
+EMAIL ID:<input type="email" name="emailid"required><br><br><br>
+
+<input type="submit" value="submit">  
+</form>  
+</body>
+</html>
